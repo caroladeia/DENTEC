@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DENTEC - DICAS</title>
+</head>
+
+<body>
+    <!----------------------------- INICIO ---------------------------->
+    <section class="parte1">
+        <div class="container-esquerda">
+            <img src="img/Dicas Dentec.svg" alt="Logo" class="dicas-img">
+            <div class="textos">
+                <p class="entenda">ENTENDA OS PROCESSOS!</p>
+                <p class="frase"><b>Veja</b> antes, <b>confie</b> durante, <b>sorria</b> depois.</p>
+            </div>
+        </div>
+
+        <div class="maos-container">
+            <img src="img/Dicas Dentec 2.svg" alt="MOES">
+        </div>
+    </section>
+
+   <!----------------------------- PROCEDIMENTOS ---------------------------->
+<section class="parte2">
+    <div class="container-titulo">
+        <h2 class="titulo">PROCEDIMENTOS</h2>
+    </div>
+
+    <div class="content-container">
+        <i class="fa-solid fa-arrow-left fa-2xl" id="prev"></i>
+
+        <div class="left">
+            <!-- Substituindo o <video> por um iframe para vídeos do YouTube -->
+            <div class="media-container">
+
+                <iframe id="video" class="video" 
+                        src="https://www.youtube.com/embed/SwjIQ9e-4rg?si=1kAyldV0_p78wHXv" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+
+
+                <iframe id="video" class="video"
+                src="https://www.youtube.com/embed/SwjIQ9e-4rg?si=1kAyldV0_p78wHXv" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" 
+                 allowfullscreen>
+                </iframe>
+
+
+                <img id="image" class="media" style="display: none;" />
+            </div>
+            <p id="exemploVisual" class="exemplo">EXEMPLO VISUAL</p>
+        </div>
+
+        <div class="right">
+            <p id="procedimentoTitulo" class="exemplo">EXTRAÇÃO DENTARIA</p>
+            <div class="card-container" id="card-container">
+                <!-- Apenas 4 cards -->
+                <div class="linha">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card"><img src="img/um.png" alt="">
+                                <h2>O QUE É</h2>
+                            </div>
+                            <div class="tras">Descrição do procedimento</div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card"><img src="img/dois.png" alt="">
+                                <h2>INSTRUMENTOS</h2>
+                            </div>
+                            <div class="tras">Descrição dos instrumentos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card"><img src="img/tres.png" alt="">
+                                <h2>RESULTADOS</h2>
+                            </div>
+                            <div class="tras">Descrição dos resultados</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="card"><img src="img/quatro.png" alt="">
+                                <h2>PROCESSO</h2>
+                            </div>
+                            <div class="tras">Descrição do processo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-arrow-right fa-2xl" id="next"></i>
+    </div>
+</section>
+
+
+    <!----------------------------- CUIDADOS INFANTIS ---------------------------->
+    <section class="parte2">
+        <div class="container-titulo">
+            <h2 class="titulo">CUIDADOS INFANTIS</h2>
+        </div>
+
+        <div class="container">
+            <!-- Botões com as opções -->
+            <div class="buttons">
+                <button class="btn active" id="btn1" onclick="changeContent(1)">
+                    <img class="icon" src="img/introdução à higiene bucal.png" alt="Ícone 1">
+                    Introdução à Higiene Bucal
+                </button>
+                <button class="btn" id="btn2" onclick="changeContent(2)">
+                    <img class="icon" src="img/primeira consulta.png" alt="Ícone 2">
+                    Primeira Consulta
+                </button>
+                <button class="btn" id="btn3" onclick="changeContent(3)">
+                    <img class="icon" src="img/prevenir cáries.png" alt="Ícone 3">
+                    Prevenir Cáries
+                </button>
+            </div>
+
+            <!-- Barra de progresso -->
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <!-- Conteúdo das imagens lado a lado -->
+            <div class="content">
+                <div class="image-row">
+                    <div class="image-container">
+                        <img id="image1"
+                            src="https://shortpixel.com/blog/wp-content/uploads/2023/12/ezgif-5-1573383f6b.gif"
+                            alt="gif representando o texto">
+                        <p id="description1">Explique de maneira simples e sem causar medo.</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img id="image2" src="https://example.com/video2.gif" alt="gif representando o texto">
+                        <p id="description2">Ofereça um pequeno prêmio após a consulta.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+<script src="https://kit.fontawesome.com/500c67e5a6.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
